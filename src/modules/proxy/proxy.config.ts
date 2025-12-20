@@ -6,5 +6,5 @@ interface ProxyRoute {
 export type ProxyRoutes = ProxyRoute[]
 
 export const MOCK_CONFIG: ProxyRoutes = [
-  { path: '/mock', target: 'http://localhost:4001' }
+  { path: '/api/mock', target: 'http://localhost:4001' }
 ]

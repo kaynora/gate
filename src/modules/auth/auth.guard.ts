@@ -8,9 +8,7 @@ import { JwtService } from '@nestjs/jwt'
 
 @Injectable()
 export class AuthGuard implements CanActivate {
-  constructor (private jwtService: JwtService) {
-    console.log('AuthGuard instantiated')
-  }
+  constructor (private jwtService: JwtService) {}
 
   async canActivate (context: ExecutionContext): Promise<boolean> {
     const req = context.switchToHttp().getRequest()
